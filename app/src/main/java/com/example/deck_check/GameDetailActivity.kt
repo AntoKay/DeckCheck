@@ -100,7 +100,7 @@ class GameDetailActivity : AppCompatActivity() {
                         "Steam Deck compatibility unknown"
                     }
                 } else {
-                    "Unknown Game ID"
+                    "Steam Deck compatibility unknown"
                 }
 
                 // Aggiorna l'interfaccia utente, da fare necessariamente nel thread principale
