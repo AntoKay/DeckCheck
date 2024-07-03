@@ -52,7 +52,7 @@ class GameDetailActivity : AppCompatActivity() {
     // Funzione di web scraping
     private fun scrapeGameInfo(gameId: String) {
         // Avvia una coroutine che utilizza il dispatcher IO
-        // che è ottimizzato per eseguire operazioni di accesso ai file o le chiamate di rete
+        // che è ottimizzato per eseguire operazioni come l'accesso ai file o le chiamate di rete
         CoroutineScope(Dispatchers.IO).launch {
             try {
                 // Imposta l'URL dinamico con il gameId
@@ -61,9 +61,7 @@ class GameDetailActivity : AppCompatActivity() {
                 val userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
 
                 // Accede alla pagina web e ne ricava il file .html da analizzare
-                val doc = Jsoup.connect(url)
-                    .userAgent(userAgent)
-                    .get()
+                val doc = Jsoup.connect(url).userAgent(userAgent).get()
 
                 // Trova l'elemento con id "appHubAppName" (che contiene il titolo del gioco)
                 val appTitleElement = doc.getElementById("appHubAppName")
