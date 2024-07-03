@@ -128,7 +128,7 @@ class GameDetailActivity : AppCompatActivity() {
             "Steam Deck Verified" -> compatibilityStatusIcon.setImageResource(R.drawable.verified)
             "Playable on Steam Deck" -> compatibilityStatusIcon.setImageResource(R.drawable.playable)
             "Not supported on Steam Deck" -> compatibilityStatusIcon.setImageResource(R.drawable.unsupported)
-            "Steam Deck compatibility unknown" -> compatibilityStatusIcon.setImageResource(R.drawable.unknown)
+            //"Steam Deck compatibility unknown" -> compatibilityStatusIcon.setImageResource(R.drawable.unknown)
             else -> compatibilityStatusIcon.setImageResource(R.drawable.unknown)
         }
     }
