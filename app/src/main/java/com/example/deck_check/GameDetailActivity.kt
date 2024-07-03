@@ -63,7 +63,7 @@ class GameDetailActivity : AppCompatActivity() {
                 // Accede alla pagina web e ne ricava il file .html da analizzare
                 val doc = Jsoup.connect(url).userAgent(userAgent).get()
 
-                // Trova l'elemento con id "appHubAppName" (che contiene il titolo del gioco)
+                // Trova l'elemento con id "appHubAppName" che contiene il titolo del gioco
                 val appTitleElement = doc.getElementById("appHubAppName")
 
                 // Estrae il titolo del gioco impostando un valore di default nel caso
