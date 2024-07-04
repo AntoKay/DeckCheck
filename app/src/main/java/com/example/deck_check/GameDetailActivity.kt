@@ -95,7 +95,7 @@ class GameDetailActivity : AppCompatActivity() {
                                 else -> "Steam Deck compatibility unknown"
                             }
                         } catch (e: Exception) {
-                            "Error parsing Deck compatibility information."
+                            "Error parsing compatibility informations"
                         }
                     } else {
                         "Steam Deck compatibility unknown"
