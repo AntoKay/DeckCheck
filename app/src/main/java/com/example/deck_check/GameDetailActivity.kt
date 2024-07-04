@@ -5,16 +5,16 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.* // Per gestire in maniera asincrona le operazionei di accesso alla rete
+import kotlinx.coroutines.* // Per gestire in maniera asincrona le operazioni di accesso alla rete
                             // e di scraping senza bloccare il thread principale
 import org.json.JSONObject // Per gestire l'attributo "application_config"
 import org.jsoup.Jsoup // Per le funzioni di scraping
-import java.io.IOException // Per gestire le eccezioni
+import java.io.IOException
 
 
 class GameDetailActivity : AppCompatActivity() {
 
-    // Variabili per gli elementi dell'interfaccia utente
+    // Elementi dell'interfaccia utente
     private lateinit var gameTitleTextView: TextView
     private lateinit var compatibilityTextView: TextView
     private lateinit var compatibilityStatusIcon: ImageView
@@ -38,7 +38,7 @@ class GameDetailActivity : AppCompatActivity() {
         if (gameId != null) {
             scrapeGameInfo(gameId)
         } else {
-            // Gestire il campo vuoto del gameId se l'app crasha
+            // Gestire in caso di crash dell'applicazione
         }
 
         // Alla pressione del tasto 'back' rilancia la MainActivity
@@ -51,8 +51,9 @@ class GameDetailActivity : AppCompatActivity() {
 
     // Funzione di web scraping
     private fun scrapeGameInfo(gameId: String) {
-        // Avvia una coroutine che utilizza il dispatcher IO
+        // Avvia una coroutine al di fuori del thread principale che utilizza Dispatchers.IO
         // che è ottimizzato per eseguire operazioni come l'accesso ai file o le chiamate di rete
+        // per evitare di bloccare il thread principale e causare la mancata risposta dell'app
         CoroutineScope(Dispatchers.IO).launch {
             try {
                 // Imposta l'URL dinamico con il gameId
@@ -103,7 +104,7 @@ class GameDetailActivity : AppCompatActivity() {
                     "Steam Deck compatibility unknown"
                 }
 
-                // Aggiorna l'interfaccia utente, da fare necessariamente nel thread principale
+                // Aggiorna l'interfaccia utente nel thread principale
                 withContext(Dispatchers.Main) {
                     gameTitleTextView.text = gameTitle
                     compatibilityTextView.text = deckVerifiedStatus

@@ -11,9 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Instanzia e inizializza il tasto di ricerca
+        // Tasto di ricerca
         val searchButton = findViewById<Button>(R.id.search_button)
-        // Inizializza la barra di ricerca
+        // Barra di ricerca
         val gameIdInput = findViewById<EditText>(R.id.game_id_input)
 
         // Alla pressione del tasto di ricerca ricava il gameId inserito
