@@ -9,7 +9,7 @@ import kotlinx.coroutines.* // Per gestire in maniera asincrona le operazioni di
                             // e di scraping senza bloccare il thread principale
 import org.json.JSONObject // Per gestire l'attributo "application_config"
 import org.jsoup.Jsoup // Per le funzioni di scraping
-import java.io.IOException
+import java.io.IOException //ggg
 
 
 class GameDetailActivity : AppCompatActivity() {
