@@ -1,4 +1,5 @@
-![presentazione deck check - GitHub](https://github.com/AntoKay/DeckCheck/assets/34346522/02d64c77-3d85-4ee2-bce0-425f9d8c215f)
+![presentazione deck check - GitHub](https://github.com/AntoKay/DeckCheck/assets/34346522/b18b42c1-af9b-4019-9eda-810387dfd709)
+
 
 A simple Android app that, given a Steam game ID, retrieves the Steam Deck compatibility status.
 
