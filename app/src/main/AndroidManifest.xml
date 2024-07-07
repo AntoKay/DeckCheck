@@ -7,7 +7,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/icon_final"
-        android:label="Deck Check"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/icon_final_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Deck_Check"
@@ -26,7 +26,6 @@
         </activity>
     </application>
 
-    // Permesso per poter usare Internet
     <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>
