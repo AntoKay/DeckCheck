@@ -12,7 +12,7 @@ Here are some game IDs for testing:
 
 VERIFIED: 220 (Half-Life 2), 620 (Portal 2), 1888930 (The Last of Us: Part I)
 
-PLAYABLE: 1328670 (Mass Effect Legendary Edition), 2395210 (Tony Hawk's Pro Skater 1+2), 1172470 (Apex Legends)
+PLAYABLE: 1222700 (A Way Out), 2395210 (Tony Hawk's Pro Skater 1+2), 1172470 (Apex Legends)
 
 NOT SUPPORTED: 1774580 (Star Wars Jedi Survivor), 552440 (The Talos Principle VR), 1225560 (Unravel)
 
