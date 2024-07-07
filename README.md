@@ -10,7 +10,7 @@ The app is built with Android 9.0 (API 28) SDK and the UI is optimized for devic
 
 Here are some game IDs for testing:
 
-VERIFIED: 220 (Half-Life 2), 620 (Portal 2), 1888930 (The Last of Us: Part I)
+VERIFIED: 220 (Half-Life 2), 620 (Portal 2), 1599660 (Sackboy: A Big Adventure)
 
 PLAYABLE: 1222700 (A Way Out), 2395210 (Tony Hawk's Pro Skater 1+2), 1172470 (Apex Legends)
 
