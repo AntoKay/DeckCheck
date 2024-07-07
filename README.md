@@ -2,9 +2,9 @@
 
 A simple Android app that, given a Steam game ID, retrieves the Steam Deck compatibility status.
 
-Since the Steam web API don't give any information about the Steam Deck compatibility, this app implements the Jsoup library (https://jsoup.org) to web scrape the Steam store page of the game to retrieve its compatibility status, using coroutines (https://developer.android.com/kotlin/coroutines?hl=it) when needed.
+Since the Steam web API don't give any information about the Steam Deck compatibility, this app implements the Jsoup library (https://jsoup.org) to web scrape the Steam store page of the game to retrieve its compatibility status with Deck, using coroutines when needed (https://developer.android.com/kotlin/coroutines?hl=it).
 
-The UI is optimized for devices with a 1080x1920 resolution screen (like Google Pixel 2) in portrait mode.
+The app is built with Android 9.0 (API 28) SDK and the UI is optimized for devices with 1080x1920 screen resolution (like Google Pixel 2) in portrait mode.
 
 
 Here are some game IDs for testing:
@@ -15,4 +15,4 @@ PLAYABLE: 1328670 (Mass Effect Legendary Edition), 2395210 (Tony Hawk's Pro Skat
 
 NOT SUPPORTED: 1774580 (Star Wars Jedi Survivor), 552440 (The Talos Principle VR), 1225560 (Unravel)
 
-UNKNOWN: 2556990 (Beyond Good & Evil 20th Anniversary Edition), 2172010 (Until Dawn), 1792460 (We Kill Monsters)
+UNKNOWN: 2556990 (Beyond Good & Evil 20th Anniversary Edition), 2172010 (Until Dawn), 1687960 (The Wreck)
